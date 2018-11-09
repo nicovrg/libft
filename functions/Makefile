@@ -79,11 +79,11 @@ HEADER = libft.h
 
 FLAGS = -Wall -Werror -Wextra
 
+all: $(NAME)
+
 $(NAME): $(OBJECTS)
 	gcc $(FLAGS) -c $(SRCS) -I $(HEADER)
 	ar rc $(NAME) $(OBJECTS)
-
-all: $(NAME)
 
 clean:
 	rm -f $(OBJECTS)
