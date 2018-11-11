@@ -6,7 +6,7 @@
 #    By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/09 16:29:08 by nivergne          #+#    #+#              #
-#    Updated: 2018/11/09 16:36:10 by nivergne         ###   ########.fr        #
+#    Updated: 2018/11/11 16:18:50 by nivergne         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,19 +71,23 @@ SRCS =	ft_atoi.c\
 		ft_strdel.c\
 		ft_strlcat.c\
 		ft_strncpy.c\
-		ft_strstr.c\
+		ft_strstr.c
 
 OBJECTS = $(SRCS:.c=.o)
 
-HEADER = .
+HEADER = -I .
 
-FLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra
 
-$(NAME): $(OBJECTS)
-	gcc $(FLAGS) -c $(SRCS) -I $(HEADER)
-	ar rc $(NAME) $(OBJECTS)
+CC = gcc
 
 all: $(NAME)
+
+$(NAME): $(OBJECTS)
+	ar rcs $(NAME) $(OBJECTS)
+
+%.o: %.c
+	$(CC) -c $(CFLAGS) $< -o $@
 
 clean:
 	rm -f $(OBJECTS)
@@ -92,3 +96,9 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean
+
+#test: coucou
+#	echo $< # coucou = c'est la dependance
+#	echo $@ # test = c'est la regle

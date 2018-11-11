@@ -6,7 +6,7 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/12 15:30:12 by nivergne          #+#    #+#             */
-/*   Updated: 2018/11/07 17:25:11 by nivergne         ###   ########.fr       */
+/*   Updated: 2018/11/11 19:28:26 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int		check_space(const char c, char separator)
 	return (0);
 }
 
-static int		count_words(const char *str, char separator)
+static int		num(const char *str, char separator)
 {
 	int i;
 	int word_number;
@@ -74,7 +74,7 @@ char			**ft_strsplit(char const *s, char c)
 	i = 0;
 	j = 0;
 	y = (char *)s;
-	if (!(tab = (char **)malloc(sizeof(char *) * (count_words(y, c) + 1))))
+	if (s == NULL || !(tab = (char **)malloc(sizeof(char *) * (num(y, c) + 1))))
 		return (NULL);
 	while (s[i])
 	{

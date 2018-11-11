@@ -6,13 +6,13 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/11 19:13:18 by nivergne          #+#    #+#             */
-/*   Updated: 2018/11/09 15:54:05 by nivergne         ###   ########.fr       */
+/*   Updated: 2018/11/11 17:13:08 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(__unused char const *s)
+char	*ft_strtrim(char const *s)
 {
 	int		i;
 	int		j;
@@ -25,15 +25,14 @@ char	*ft_strtrim(__unused char const *s)
 	while ((s[i]) && (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'))
 		i++;
 	if (i == (int)ft_strlen(s))
-		return ("");
+		return (ft_strnew(1));
 	while ((s[j] == ' ' || s[j] == '\t' || s[j] == '\n') && j > 0)
 		j--;
 	j = ft_strlen(s) - j;
 	j--;
 	if (!(result = ft_strnew(ft_strlen(s) - (i + j))))
 		return (NULL);
-	ft_strncpy(result, s + i, ft_strlen(s) - i - j);
-	return (result);
+	return (ft_strncpy(result, s + i, ft_strlen(s) - i - j));
 }
 
 /*
@@ -44,8 +43,32 @@ char	*ft_strtrim(__unused char const *s)
 ** RETURN VALUE
 ** strtrim returns its argument.
 **
+** Second attempt
+** char	*ft_strtrim(char const *s)
+** {
+**	int		i;
+**	int		j;
+**	char	*result;
 **
-** Nostalgie, mon premier strtrim tout pete
+**	if (s == NULL)
+**		return (NULL);
+**	i = 0;
+**	j = ft_strlen(s) - 1;
+**	while ((s[i]) && (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'))
+**		i++;
+**	if (i == (int)ft_strlen(s))
+**		return ("");
+**	while ((s[j] == ' ' || s[j] == '\t' || s[j] == '\n') && j > 0)
+**		j--;
+**	j = ft_strlen(s) - j;
+**	j--;
+**	if (!(result = ft_strnew(ft_strlen(s) - (i + j))))
+**		return (NULL);
+**	return (ft_strncpy(result, s + i, ft_strlen(s) - i - j));
+** }
+**
+**
+** Firt attempt
 ** char	*ft_strtrim(char const *s)
 ** {
 ** size_t		i;
