@@ -29,11 +29,11 @@ int		ft_atoi(const char *str)
 		i++;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (sign == 1 && result > INT32_MAX)
-			return (-1);
-		if (sign == -1 && result > (size_t)(INT32_MAX) + 1)
-			return (0);
 		result = result * 10 + str[i] - '0';
+		if (sign == 1 && result > INT64_MAX)
+			return (-1);
+		if (sign == -1 && result > (size_t)(INT64_MAX) + 1)
+			return (0);
 		i++;
 	}
 	return ((int)result * sign);
