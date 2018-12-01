@@ -6,7 +6,7 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:07:58 by nivergne          #+#    #+#             */
-/*   Updated: 2018/11/12 16:54:04 by nivergne         ###   ########.fr       */
+/*   Updated: 2018/11/30 19:00:46 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,8 @@ int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
 char				*ft_strstr(const char *haystack, const char *needle);
-char				*ft_strnstr(const char *haystack, const char *needle,
-					size_t len);
+char				*ft_strnstr(const char *hs, const char *nl, size_t len);
+
+int             get_next_line(const int fd, char **line);
 
 #endif

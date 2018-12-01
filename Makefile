@@ -6,7 +6,7 @@
 #    By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/09 16:29:08 by nivergne          #+#    #+#              #
-#    Updated: 2018/11/13 16:00:51 by nivergne         ###   ########.fr        #
+#    Updated: 2018/12/01 17:24:25 by nivergne         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,7 +71,8 @@ SRCS =	ft_atoi.c\
 		ft_strdel.c\
 		ft_strlcat.c\
 		ft_strncpy.c\
-		ft_strstr.c
+		ft_strstr.c\
+		get_next_line.c
 
 OBJECTS = $(SRCS:.c=.o)
 
