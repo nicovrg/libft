@@ -6,7 +6,7 @@
 #    By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/09 16:29:08 by nivergne          #+#    #+#              #
-#    Updated: 2018/12/01 17:24:25 by nivergne         ###   ########.fr        #
+#    Updated: 2018/12/21 00:56:49 by nivergne         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,7 @@ SRCS =	ft_atoi.c\
 		ft_memalloc.c\
 		ft_memmove.c\
 		ft_putnbr.c\
+		ft_sqrt.c\
 		ft_strclr.c\
 		ft_striter.c\
 		ft_strmapi.c\
