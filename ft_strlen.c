@@ -6,7 +6,7 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/31 14:54:23 by nivergne          #+#    #+#             */
-/*   Updated: 2018/11/13 15:11:25 by nivergne         ###   ########.fr       */
+/*   Updated: 2018/12/21 00:50:57 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,10 @@
 
 size_t		ft_strlen(const char *s)
 {
-	size_t			i;
-	unsigned char	*s_cpy;
+	size_t	i;
 
 	i = 0;
-	s_cpy = (unsigned char *)s;
-	while (s_cpy[i])
+	while (s[i])
 		i++;
 	return (i);
 }
