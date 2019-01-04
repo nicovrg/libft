@@ -6,7 +6,7 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/30 19:22:42 by nivergne          #+#    #+#             */
-/*   Updated: 2019/01/04 17:17:49 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/01/04 17:23:50 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+
 /*
 ** DESCRIPTION
 ** Memcpy function copies n bytes from memory area src to memory area dst.
