@@ -6,7 +6,7 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/30 19:22:42 by nivergne          #+#    #+#             */
-/*   Updated: 2018/11/13 15:53:16 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/01/04 17:17:49 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,12 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t			i;
-	unsigned char	*dst_cpy;
-	unsigned char	*src_cpy;
+	size_t	i;
 
 	i = 0;
-	dst_cpy = (unsigned char *)dst;
-	src_cpy = (unsigned char *)src;
 	while (i < n)
 	{
-		dst_cpy[i] = src_cpy[i];
+		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 		i++;
 	}
 	return (dst);
