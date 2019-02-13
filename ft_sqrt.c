@@ -6,11 +6,9 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 15:41:14 by nivergne          #+#    #+#             */
-/*   Updated: 2018/11/13 12:29:00 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/02/13 18:01:07 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int		ft_sqrt(int nb)
 {

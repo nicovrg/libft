@@ -6,11 +6,9 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 15:38:33 by nivergne          #+#    #+#             */
-/*   Updated: 2018/11/13 12:24:44 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/02/13 18:00:36 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int		ft_power(int nb, int power)
 {

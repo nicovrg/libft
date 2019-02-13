@@ -6,11 +6,9 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 15:42:12 by nivergne          #+#    #+#             */
-/*   Updated: 2018/11/13 11:13:14 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/02/13 17:56:12 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int		ft_is_prime(int nb)
 {

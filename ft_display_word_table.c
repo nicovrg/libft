@@ -6,11 +6,9 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 16:53:07 by nivergne          #+#    #+#             */
-/*   Updated: 2018/11/13 11:10:13 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/02/13 17:49:53 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 static void	ft_display_words_tables(char **tab)
 {

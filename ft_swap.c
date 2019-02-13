@@ -6,11 +6,9 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/11 19:23:15 by nivergne          #+#    #+#             */
-/*   Updated: 2018/11/13 15:57:53 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/02/13 18:03:01 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_swap(char *a, char *b)
 {

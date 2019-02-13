@@ -6,11 +6,9 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/03 22:23:53 by nivergne          #+#    #+#             */
-/*   Updated: 2018/11/13 14:28:43 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/02/13 18:01:28 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int		ft_strcmp(const char *s1, const char *s2)
 {
