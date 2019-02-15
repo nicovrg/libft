@@ -6,7 +6,7 @@
 #    By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/09 16:29:08 by nivergne          #+#    #+#              #
-#    Updated: 2018/12/21 00:56:49 by nivergne         ###   ########.fr        #
+#    Updated: 2019/02/15 23:45:47 by nivergne         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,27 +75,39 @@ SRCS =	ft_atoi.c\
 		ft_strstr.c\
 		get_next_line.c
 
-OBJECTS = $(SRCS:.c=.o)
-
-HEADER = -I .
-
-CFLAGS = -Wall -Werror -Wextra
+GRN = \033[0;32m
+BLU = \033[1;34m
+RED = \x1b[31m
+PUR = \x1b[35m
+CYAN = \x1b[36m
+IGREY = \x1b[40m
+UNDER = \x1b[4m
+REV = \x1b[7m
+BOLD = \x1b[1m
+END = \x1b[0m
 
 CC = gcc
+CFLAGS = -Wall -Werror -Wextra
+HEADER = -I.
+OBJECTS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	ar rcs $(NAME) $(OBJECTS)
+	@echo "$(GRN)$(BOLD)compile libft$(END)"
+	@ar rcs $(NAME) $(OBJECTS)
 
 %.o: %.c
-	$(CC) -c $(CFLAGS) $< -o $@
-
+	@echo "$(BLU)pre compile $(basename $@)$(white)"
+	@$(CC) -c $(CFLAGS) $< -o $@
+	
 clean:
-	rm -f $(OBJECTS)
+	@echo "$(RED)delete all obj$(END)"
+	@rm -f $(OBJECTS)
 
 fclean: clean
-	rm -f $(NAME)
+	@echo "$(RED)delete binary$(END)"
+	@rm -f $(NAME)
 
 re: fclean all
 
@@ -104,3 +116,5 @@ re: fclean all
 #test: coucou
 #	echo $< # coucou = c'est la dependance
 #	echo $@ # test = c'est la regle
+#	%.o: %.c = regle implicite, crée tous les .o a partir des .c
+
