@@ -6,7 +6,7 @@
 #    By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/09 16:29:08 by nivergne          #+#    #+#              #
-#    Updated: 2019/02/15 23:45:47 by nivergne         ###   ########.fr        #
+#    Updated: 2019/02/16 18:57:34 by nivergne         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -94,19 +94,19 @@ OBJECTS = $(SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	@echo "$(GRN)$(BOLD)compile libft$(END)"
+	@echo "$(GRN)$(BOLD)libft [OK]$(END)"
 	@ar rcs $(NAME) $(OBJECTS)
 
 %.o: %.c
-	@echo "$(BLU)pre compile $(basename $@)$(white)"
+	@echo "pre-compile $(BLU)$(basename $@)$(END)"
 	@$(CC) -c $(CFLAGS) $< -o $@
 	
 clean:
-	@echo "$(RED)delete all obj$(END)"
+	@echo "$(RED)delete obj [OK]$(END)"
 	@rm -f $(OBJECTS)
 
 fclean: clean
-	@echo "$(RED)delete binary$(END)"
+	@echo "$(RED)delete binary [OK]$(END)"
 	@rm -f $(NAME)
 
 re: fclean all
