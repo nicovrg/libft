@@ -6,7 +6,7 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:07:58 by nivergne          #+#    #+#             */
-/*   Updated: 2018/12/01 17:33:44 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/02/18 21:56:03 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,6 @@ int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s);
-void				ft_display_words_tables(char **tab);
 char				**ft_strsplit(char const *s, char c);
 
 int					ft_atoi(const char *str);

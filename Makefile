@@ -6,9 +6,10 @@
 #    By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/09 16:29:08 by nivergne          #+#    #+#              #
-#    Updated: 2019/02/15 23:45:47 by nivergne         ###   ########.fr        #
+#    Updated: 2019/02/18 21:55:06 by nivergne         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
 
 NAME = libft.a
 
@@ -73,6 +74,9 @@ SRCS =	ft_atoi.c\
 		ft_strlcat.c\
 		ft_strncpy.c\
 		ft_strstr.c\
+        ft_factorial.c\
+        ft_is_prime.c\
+        ft_find_next_prime.c\
 		get_next_line.c
 
 GRN = \033[0;32m
@@ -94,19 +98,21 @@ OBJECTS = $(SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	@echo "$(GRN)$(BOLD)compile libft$(END)"
+	@echo "$(GRN)$(BOLD)libft [OK]$(END)"
 	@ar rcs $(NAME) $(OBJECTS)
 
 %.o: %.c
-	@echo "$(BLU)pre compile $(basename $@)$(white)"
+	@echo "pre-compile $(BLU)$(basename $@)$(END)"
+	@printf "\033[A"
 	@$(CC) -c $(CFLAGS) $< -o $@
+	@printf "\33[2K"
 	
 clean:
-	@echo "$(RED)delete all obj$(END)"
+	@echo "$(RED)delete obj [OK]$(END)"
 	@rm -f $(OBJECTS)
 
 fclean: clean
-	@echo "$(RED)delete binary$(END)"
+	@echo "$(RED)delete binary [OK]$(END)"
 	@rm -f $(NAME)
 
 re: fclean all
