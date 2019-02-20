@@ -6,10 +6,11 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/15 17:10:09 by nivergne          #+#    #+#             */
-/*   Updated: 2018/12/01 17:29:02 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/02/20 19:52:47 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "limits.h"
 #include "get_next_line.h"
 
 static int	find_newline(char *store)

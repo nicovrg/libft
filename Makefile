@@ -5,121 +5,169 @@
 #                                                     +:+ +:+         +:+      #
 #    By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/11/09 16:29:08 by nivergne          #+#    #+#              #
-#    Updated: 2019/02/18 21:57:32 by nivergne         ###   ########.fr        #
+#    Created: 2019/02/20 12:42:57 by nivergne          #+#    #+#              #
+#    Updated: 2019/02/20 20:11:38 by nivergne         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRCS =	ft_atoi.c\
-		ft_isprint.c\
-		ft_lstmap.c\
-		ft_memcpy.c\
-		ft_putendl.c\
-		ft_strcat.c\
-		ft_strdup.c\
-		ft_strlen.c\
-		ft_strnequ.c\
-		ft_strsub.c\
-		ft_bzero.c\
-		ft_itoa.c\
-		ft_lstnew.c\
-		ft_memdel.c\
-		ft_putendl_fd.c\
-		ft_strchr.c\
-		ft_strequ.c\
-		ft_strmap.c\
-		ft_strnew.c\
-		ft_strtrim.c\
-		ft_isalnum.c\
-		ft_lstadd.c\
-		ft_memalloc.c\
-		ft_memmove.c\
-		ft_putnbr.c\
-		ft_sqrt.c\
-		ft_strclr.c\
-		ft_striter.c\
-		ft_strmapi.c\
-		ft_strrchr.c\
-		ft_swap.c\
-		ft_isalpha.c\
-		ft_lstdel.c\
-		ft_memccpy.c\
-		ft_memset.c\
-		ft_putnbr_fd.c\
-		ft_strcmp.c\
-		ft_striteri.c\
-		ft_strncat.c\
-		ft_strrev.c\
-		ft_tolower.c\
-		ft_isascii.c\
-		ft_lstdelone.c\
-		ft_memchr.c\
-		ft_putchar.c\
-		ft_putstr.c\
-		ft_strcpy.c\
-		ft_strjoin.c\
-		ft_strncmp.c\
-		ft_strnstr.c\
-		ft_strsplit.c\
-		ft_toupper.c\
-		ft_isdigit.c\
-		ft_lstiter.c\
-		ft_memcmp.c\
-		ft_putchar_fd.c\
-		ft_putstr_fd.c\
-		ft_strdel.c\
-		ft_strlcat.c\
-		ft_strncpy.c\
-		ft_strstr.c\
-        ft_factorial.c\
-        ft_is_prime.c\
-        ft_find_next_prime.c\
-		get_next_line.c
+SRC_LIBFT =					ft_atoi.c\
+							ft_isalnum.c\
+							ft_isalpha.c\
+							ft_isascii.c\
+							ft_isdigit.c\
+							ft_isprint.c\
+							ft_itoa.c\
+							ft_memset.c\
+							ft_putchar.c\
+							ft_putchar_fd.c\
+							ft_putendl.c\
+							ft_putendl_fd.c\
+							ft_putnbr.c\
+							ft_putnbr_fd.c\
+							ft_putstr.c\
+							ft_putstr_fd.c\
+							ft_strncat.c\
+							ft_strrchr.c\
+							ft_strchr.c\
+							ft_strcpy.c\
+							ft_strdup.c\
+							ft_strequ.c\
+							ft_striter.c\
+							ft_striteri.c\
+							ft_strlen.c\
+							ft_strmap.c\
+							ft_strmapi.c\
+							ft_strcat.c\
+							ft_strcmp.c\
+							ft_strncpy.c\
+							ft_strnequ.c\
+							ft_strnstr.c\
+							ft_strstr.c\
+							ft_tolower.c\
+							ft_toupper.c\
+							ft_strncmp.c\
+							ft_memset.c\
+							ft_bzero.c\
+							ft_memcpy.c\
+							ft_memccpy.c\
+							ft_memmove.c\
+							ft_memchr.c\
+							ft_memcmp.c\
+							ft_strlcat.c\
+							ft_memalloc.c\
+							ft_memdel.c\
+							ft_strnew.c\
+							ft_strdel.c\
+							ft_strclr.c\
+							ft_strsub.c\
+							ft_strjoin.c\
+							ft_strtrim.c\
+							ft_strsplit.c\
+							ft_lstnew.c\
+							ft_lstdelone.c\
+							ft_lstdel.c\
+							ft_lstadd.c\
+							ft_lstiter.c\
+							ft_lstmap.c\
+							get_next_line.c
 
-GRN = \033[0;32m
-BLU = \033[1;34m
-RED = \x1b[31m
-PUR = \x1b[35m
-CYAN = \x1b[36m
-IGREY = \x1b[40m
-UNDER = \x1b[4m
-REV = \x1b[7m
-BOLD = \x1b[1m
-END = \x1b[0m
+SRC_PRINTF =				ft_printf.c\
+							parse.c\
+							else.c\
+							print_per.c\
+							print_b.c\
+							print_c.c\
+							print_s.c\
+							print_p.c\
+							print_i.c\
+							print_o.c\
+							print_u.c\
+							print_x.c\
+							print_f.c\
+							print_ff.c\
+							width_csp.c\
+							width_dioux.c\
+							convert_base.c
 
-CC = gcc
-CFLAGS = -Wall -Werror -Wextra
-HEADER = -I.
-OBJECTS = $(SRCS:.c=.o)
+UNDER	=					\x1b[4m
+BOLD	=					\x1b[1m
+REV		=					\x1b[7m
+END		=					\x1b[0m
+
+RED		=					\x1b[31m
+GREEN	=					\x1b[32m
+BLUE	=					\x1b[34m
+YELLOW	=					\x1b[33m
+CYAN	=					\x1b[36m
+PURPLE	=					\x1b[35m
+GREY	=					\x1b[40m
+WHITE	=					\x1b[37m
+
+IRED	=					\x1b[41m
+IGREEN	=					\x1b[42m
+IBLUE	=					\x1b[44m
+IYELLOW	=					\x1b[43m
+ICYAN	=					\x1b[46m
+IPURPLE	=					\x1b[45m
+IGREY	=					\x1b[40m
+IWHITE	=					\x1b[47m
+
+CC =						gcc
+CFLAGS =					-Wall -Wextra -Werror
+
+INCLUDE =					-I./include/
+
+# PATH_INC =					./include/
+PATH_LIBFT =				./libft
+PATH_PRINTF =				./ft_printf
+PATH_OBJ =					./obj
+
+# INC_LIB =					./include/libft.h
+# INC_PRINTF =				./include/ft_printf.h
+OBJ_LIBFT =					$(SRC_LIBFT:.c=.o)
+OBJ_PRINTF =				$(SRC_PRINTF:.c=.o)
+
+# LIB =						$(addprefix $(PATH_LIBFT)/, $(SRC_LIBFT))
+# PRINTF =					$(addprefix $(PATH_PRINTF)/, $(SRC_PRINTF))
+
+FULL_LIBFT =				$(addprefix $(PATH_OBJ)/,$(OBJ_LIBFT))
+FULL_PRINTF =				$(addprefix $(PATH_OBJ)/,$(OBJ_PRINTF))
 
 all: $(NAME)
 
-$(NAME): $(OBJECTS)
-	@echo "$(GRN)$(BOLD)libft [OK]$(END)"
-	@ar rcs $(NAME) $(OBJECTS)
+$(NAME): $(FULL_LIBFT) $(FULL_PRINTF)
+	@ar rc $(NAME) $(FULL_LIBFT) $(FULL_PRINTF)
+	@ranlib $(NAME)
+	@echo "$(BOLD)$(CYAN)$(BOLD)LIBFT			$(BLUE)$(BOLD)archive		$(GREEN)[OK]$(END)"
+	@echo "$(BOLD)$(CYAN)$(BOLD)PRINTF			$(BLUE)$(BOLD)archive		$(GREEN)[OK]$(END)"
+	@echo ""
 
-%.o: %.c
-	@echo "pre-compile $(BLU)$(basename $@)$(END)"
+$(PATH_OBJ)/%.o: $(PATH_LIBFT)/%.c
+	@mkdir $(PATH_OBJ) 2> /dev/null || true
+	@echo "$(BOLD)$(CYAN)pre-compile libft	$(BLUE)$(patsubst obj/%, %, $(basename $@))$(END)"
 	@printf "\033[A"
-	@$(CC) -c $(CFLAGS) $< -o $@
+	@$(CC) $(CFLAGS) -I/libft $(INCLUDE) -o $@ -c $<
 	@printf "\33[2K"
-	
+
+$(PATH_OBJ)/%.o: $(PATH_PRINTF)/%.c
+	@mkdir $(PATH_OBJ) 2> /dev/null || true
+	@echo "$(BOLD)$(CYAN)pre-compile printf	$(BLUE)$(patsubst obj/%, %, $(basename $@))$(END)"
+	@printf "\033[A"
+	@$(CC) $(CFLAGS) -Ofast $(INCLUDE) -o $@ -c $<
+	@printf "\33[2K"
+
 clean:
-	@echo "$(RED)delete obj [OK]$(END)"
-	@rm -f $(OBJECTS)
+	@rm -rf $(OBJ_LIBFT) $(OBJ_PRINTF)
+	@echo "$(BOLD)$(CYAN)LIBFT$(BLUE)			obj		$(END)$(RED)[delete]$(END)"
+	@echo "$(BOLD)$(CYAN)PRINTF$(BLUE)			obj		$(END)$(RED)[delete]$(END)"
 
 fclean: clean
-	@echo "$(RED)delete binary [OK]$(END)"
-	@rm -f $(NAME)
-
+	@rm -rf ./obj $(NAME)
+	@echo "$(BOLD)$(CYAN)LIBFT$(BLUE)			archive		$(END)$(RED)[delete]$(END)"
+	@echo ""
+	
 re: fclean all
 
-.PHONY: all clean fclean
-
-#test: coucou
-#	echo $< # coucou = c'est la dependance
-#	echo $@ # test = c'est la regle
-#	%.o: %.c = regle implicite, crée tous les .o a partir des .c
-
+.PHONY: all clean fclean re norme
