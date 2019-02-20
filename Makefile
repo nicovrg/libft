@@ -6,7 +6,7 @@
 #    By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/20 12:42:57 by nivergne          #+#    #+#              #
-#    Updated: 2019/02/20 20:11:38 by nivergne         ###   ########.fr        #
+#    Updated: 2019/02/20 20:59:13 by nivergne         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -119,18 +119,12 @@ CFLAGS =					-Wall -Wextra -Werror
 
 INCLUDE =					-I./include/
 
-# PATH_INC =					./include/
 PATH_LIBFT =				./libft
 PATH_PRINTF =				./ft_printf
 PATH_OBJ =					./obj
 
-# INC_LIB =					./include/libft.h
-# INC_PRINTF =				./include/ft_printf.h
 OBJ_LIBFT =					$(SRC_LIBFT:.c=.o)
 OBJ_PRINTF =				$(SRC_PRINTF:.c=.o)
-
-# LIB =						$(addprefix $(PATH_LIBFT)/, $(SRC_LIBFT))
-# PRINTF =					$(addprefix $(PATH_PRINTF)/, $(SRC_PRINTF))
 
 FULL_LIBFT =				$(addprefix $(PATH_OBJ)/,$(OBJ_LIBFT))
 FULL_PRINTF =				$(addprefix $(PATH_OBJ)/,$(OBJ_PRINTF))
@@ -140,9 +134,8 @@ all: $(NAME)
 $(NAME): $(FULL_LIBFT) $(FULL_PRINTF)
 	@ar rc $(NAME) $(FULL_LIBFT) $(FULL_PRINTF)
 	@ranlib $(NAME)
-	@echo "$(BOLD)$(CYAN)$(BOLD)LIBFT			$(BLUE)$(BOLD)archive		$(GREEN)[OK]$(END)"
-	@echo "$(BOLD)$(CYAN)$(BOLD)PRINTF			$(BLUE)$(BOLD)archive		$(GREEN)[OK]$(END)"
-	@echo ""
+	@echo "$(BOLD)$(CYAN)$(BOLD)LIBFT			$(BLUE)$(BOLD)compile		$(GREEN)[OK]$(END)"
+	@echo "$(BOLD)$(CYAN)$(BOLD)PRINTF			$(BLUE)$(BOLD)compile		$(GREEN)[OK]$(END)"
 
 $(PATH_OBJ)/%.o: $(PATH_LIBFT)/%.c
 	@mkdir $(PATH_OBJ) 2> /dev/null || true
@@ -166,7 +159,6 @@ clean:
 fclean: clean
 	@rm -rf ./obj $(NAME)
 	@echo "$(BOLD)$(CYAN)LIBFT$(BLUE)			archive		$(END)$(RED)[delete]$(END)"
-	@echo ""
 	
 re: fclean all
 
