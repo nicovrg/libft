@@ -6,7 +6,7 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/24 16:08:08 by nivergne          #+#    #+#             */
-/*   Updated: 2019/02/24 16:20:48 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/02/24 18:14:32 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ static char	*join_free(char *store, char *buff)
 	ft_memcpy(join, store, i);
 	ft_memcpy(join + i, buff, j);
 	join[i + j] = '\0';
-	free(store);
 	return (join);
 }
 
@@ -55,7 +54,6 @@ static int	assign_line(char **store, char **buff, char **line)
 	if (index != -1)
 	{
 		*line = ft_strsub(*store, 0, index);
-		free(store);
 		return (1);
 	}
 	return (0);
