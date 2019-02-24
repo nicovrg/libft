@@ -6,7 +6,7 @@
 #    By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/20 12:42:57 by nivergne          #+#    #+#              #
-#    Updated: 2019/02/20 20:59:13 by nivergne         ###   ########.fr        #
+#    Updated: 2019/02/24 16:08:41 by nivergne         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,6 +71,7 @@ SRC_LIBFT =					ft_atoi.c\
 							ft_lstadd.c\
 							ft_lstiter.c\
 							ft_lstmap.c\
+							get_one_line.c\
 							get_next_line.c
 
 SRC_PRINTF =				ft_printf.c\
