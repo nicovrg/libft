@@ -6,7 +6,7 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/24 16:08:08 by nivergne          #+#    #+#             */
-/*   Updated: 2019/02/24 16:09:20 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/02/24 16:13:07 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,19 +63,19 @@ static int	assign_line(char **store, char **buff, char **line)
 
 int			get_one_line(const int fd, char **line)
 {
-	int				ret;
-	int				ret_2;
+	int				r_read;
+	int				r_assign_line;
 	char			*buff;
 	char            *store;
 
 	buff = ft_strnew(32);
-	if (!line || (ret = read(fd, buff, 0)) < 0)
+	if (!line || (r_read = read(fd, buff, 0)) < 0)
 		return (-1);
-	while ((ret = read(fd, buff, 32)) > 0)
+	while ((r_read = read(fd, buff, 32)) > 0)
 	{
-		ret_2 = assign_line(&store, &buff, line);
+		r_assign_line = assign_line(&store, &buff, line);
 		ft_strdel(&buff);
-		if (ret_2 == 1)
+		if (r_assign_line == 1)
 			return (1);
 		buff = ft_strnew(32);
 	}
