@@ -6,7 +6,7 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/24 16:08:08 by nivergne          #+#    #+#             */
-/*   Updated: 2019/02/24 16:13:07 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/02/24 16:17:27 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ static int	assign_line(char **store, char **buff, char **line)
 	return (0);
 }
 
-int			get_one_line(const int fd, char **line)
+int			get_one_line(char **line)
 {
 	int				r_read;
 	int				r_assign_line;
