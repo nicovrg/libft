@@ -6,7 +6,7 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/24 16:08:08 by nivergne          #+#    #+#             */
-/*   Updated: 2019/02/24 18:14:32 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/03/01 01:01:03 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ int			get_one_line(int fd, char **line)
 	char			*buff;
 	char            *store;
 
+	store = NULL;
 	buff = ft_strnew(32);
 	if (!line || (r_read = read(fd, buff, 0)) < 0)
 		return (-1);
