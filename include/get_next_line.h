@@ -6,14 +6,14 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/15 17:10:20 by nivergne          #+#    #+#             */
-/*   Updated: 2019/05/15 18:39:06 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/05/15 21:36:46 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-# include "libft/libft.h"
+# include "libft.h"
 
 # define BUFF_SIZE 10000
 
