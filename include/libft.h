@@ -6,7 +6,7 @@
 /*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:07:58 by nivergne          #+#    #+#             */
-/*   Updated: 2019/02/24 16:24:16 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/06/20 05:25:20 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,7 +108,6 @@ char				*ft_strrchr(const char *s, int c);
 char				*ft_strstr(const char *haystack, const char *needle);
 char				*ft_strnstr(const char *hs, const char *nl, size_t len);
 
-int             	get_one_line(const int fd, char **line);
-int             	get_next_line(const int fd, char **line);
+int					get_next_line(const int fd, char **line);
 
 #endif

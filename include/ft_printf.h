@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jquivogn <jquivogn@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/23 16:48:36 by nivergne          #+#    #+#             */
-/*   Updated: 2019/02/11 18:10:18 by jquivogn         ###   ########.fr       */
+/*   Updated: 2019/06/20 07:23:22 by nivergne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include				<unistd.h>
-# include				<limits.h>
-# include				<stdarg.h>
-# include				<wchar.h>
-# include				"libft.h"
+# include "libft.h"
+# include <unistd.h>
+# include <limits.h>
+# include <stdarg.h>
+# include <wchar.h>
 
 # define BUFF_SIZE		64
 # define UC				unsigned char
@@ -99,12 +99,10 @@ int						t_info_init(t_info *o, int i);
 int						check_type(char c, t_info *o);
 int						ft_accuracy(t_info *o);
 
-
 unsigned long long		res_size(unsigned long long value, int base);
 char					*fill_base(int base, int l);
 char					*conv(unsigned long long value, int base, int l);
 unsigned long long		itooct(unsigned long long nb);
-
 
 void					ft_addpercent(va_list ap, t_info *o);
 
@@ -156,7 +154,7 @@ int						width_bin(t_info *o);
 
 int						check_flag(char c, t_info *o);
 int						check_width(char c, t_info *o);
-int						check_accuracy_one(char c, t_info __unused *o);
+int						check_accuracy_one(char c, t_info *o);
 int						check_accuracy_two(char c, t_info *o);
 int						check_conversion(char c, t_info *o);
 
