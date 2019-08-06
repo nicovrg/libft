@@ -159,7 +159,7 @@ clean:
 
 fclean: clean
 	@rm -rf ./obj $(NAME)
-	@echo "$(BOLD)$(CYAN)LIBFT$(BLUE)			archive		$(END)$(RED)[delete]$(END)"
+	@echo "$(BOLD)$(CYAN)LIBFT$(BLUE)			arc		$(END)$(RED)[delete]$(END)"
 	
 re: fclean all
 
