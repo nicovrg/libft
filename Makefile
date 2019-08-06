@@ -6,7 +6,7 @@
 #    By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/20 12:42:57 by nivergne          #+#    #+#              #
-#    Updated: 2019/08/06 03:46:05 by nivergne         ###   ########.fr        #
+#    Updated: 2019/08/06 04:43:36 by nivergne         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,6 +63,7 @@ SRC_LIBFT =					ft_atoi.c\
 							ft_strclr.c\
 							ft_strsub.c\
 							ft_strjoin.c\
+							ft_strnjoinf.c\
 							ft_strtrim.c\
 							ft_strsplit.c\
 							ft_lstnew.c\
