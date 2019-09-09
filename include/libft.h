@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
+/*   By: qgirard <qgirard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:07:58 by nivergne          #+#    #+#             */
-/*   Updated: 2019/08/06 04:44:43 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/09/09 23:30:57 by qgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,7 @@ char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
 
 int					ft_atoi(const char *str);
+long				ft_atol(const char *str);
 char				*ft_itoa(int n);
 
 void				ft_putchar(char c);

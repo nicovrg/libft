@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+         #
+#    By: qgirard <qgirard@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/20 12:42:57 by nivergne          #+#    #+#              #
-#    Updated: 2019/08/06 04:43:36 by nivergne         ###   ########.fr        #
+#    Updated: 2019/09/09 23:32:05 by qgirard          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,7 +73,8 @@ SRC_LIBFT =					ft_atoi.c\
 							ft_lstiter.c\
 							ft_lstmap.c\
 							get_next_line.c\
-							ft_realloctab.c
+							ft_realloctab.c\
+							ft_atol.c
 
 SRC_PRINTF =				ft_printf.c\
 							parse.c\
