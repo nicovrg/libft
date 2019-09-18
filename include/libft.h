@@ -6,7 +6,7 @@
 /*   By: qgirard <qgirard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:07:58 by nivergne          #+#    #+#             */
-/*   Updated: 2019/09/09 23:30:57 by qgirard          ###   ########.fr       */
+/*   Updated: 2019/09/18 05:07:49 by qgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ typedef struct		s_list
 }					t_list;
 
 void				ft_swap(char *a, char *b);
+void				ft_swap_ints(int *a, int *b);
 size_t				ft_strlen(const char *s);
 char				*ft_strrev(char *str);
 

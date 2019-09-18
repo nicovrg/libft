@@ -6,7 +6,7 @@
 #    By: qgirard <qgirard@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/20 12:42:57 by nivergne          #+#    #+#              #
-#    Updated: 2019/09/09 23:32:05 by qgirard          ###   ########.fr        #
+#    Updated: 2019/09/18 05:08:01 by qgirard          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,7 +74,8 @@ SRC_LIBFT =					ft_atoi.c\
 							ft_lstmap.c\
 							get_next_line.c\
 							ft_realloctab.c\
-							ft_atol.c
+							ft_atol.c\
+							ft_swap_ints.c
 
 SRC_PRINTF =				ft_printf.c\
 							parse.c\
