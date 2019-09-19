@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+        */
+/*   By: qgirard <qgirard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/15 17:10:09 by nivergne          #+#    #+#             */
-/*   Updated: 2019/08/06 04:57:07 by nivergne         ###   ########.fr       */
+/*   Updated: 2019/09/19 04:04:06 by qgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int			get_next_line(const int fd, char **line)
 ** static int	find_newline(char *store)
 ** {
 ** 	int	i;
-** 
+**
 ** 	i = 0;
 ** 	while (store[i] && store[i] != '\n')
 ** 		i++;
@@ -68,13 +68,13 @@ int			get_next_line(const int fd, char **line)
 ** 	else
 ** 		return (-1);
 ** }
-** 
+**
 ** static char	*join_free(char *store, char buff[BUFF_SIZE])
 ** {
 ** 	int		i;
 ** 	int		j;
 ** 	char	*join;
-** 
+**
 ** 	i = 0;
 ** 	j = 0;
 ** 	if (store)
@@ -89,12 +89,12 @@ int			get_next_line(const int fd, char **line)
 ** 	free(store);
 ** 	return (join);
 ** }
-** 
+**
 ** static int	assign_line(char **store, char buff[BUFF_SIZE], char **line)
 ** {
 ** 	int		index;
 ** 	char	*tmp;
-** 
+**
 ** 	*store = join_free(*store, buff);
 ** 	index = find_newline(*store);
 ** 	if (index != -1)
@@ -108,14 +108,14 @@ int			get_next_line(const int fd, char **line)
 ** 	}
 ** 	return (0);
 ** }
-** 
+**
 ** int			get_next_line(const int fd, char **line)
 ** {
 ** 	int				ret;
 ** 	int				ret_2;
 ** 	char			buff[BUFF_SIZE];
 ** 	static char		*store[10000];
-** 
+**
 ** 	if (!line || BUFF_SIZE <= 0 || (ret = read(fd, buff, 0)) < 0)
 ** 		return (-1);
 ** 	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
