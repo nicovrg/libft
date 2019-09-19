@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    libft.mk                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nicolasv <nicolasv@student.42.fr>          +#+  +:+       +#+         #
+#    By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/17 04:34:13 by nicolasv          #+#    #+#              #
-#    Updated: 2019/09/17 16:31:14 by nicolasv         ###   ########.fr        #
+#    Updated: 2019/09/19 23:24:14 by nivergne         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -98,12 +98,34 @@ SRC_READ =					get_next_line.c
 SRC_READ := $(addprefix read/, $(SRC_READ))
 OBJ_READ := $(addprefix read/, $(addsuffix .o, $(basename $(notdir $(SRC_READ)))))
 
+SRC_PRINTF =				ft_printf.c\
+							parse.c\
+							else.c\
+							print_per.c\
+							print_b.c\
+							print_c.c\
+							print_s.c\
+							print_p.c\
+							print_i.c\
+							print_o.c\
+							print_u.c\
+							print_x.c\
+							print_f.c\
+							print_ff.c\
+							width_csp.c\
+							width_dioux.c\
+							convert_base.c
+
+SRC_PRINTF := $(addprefix ft_printf/, $(SRC_PRINTF))
+OBJ_PRINTF := $(addprefix ft_printf/, $(addsuffix .o, $(basename $(notdir $(SRC_PRINTF)))))
+
 SRC_LIBFT := $(addprefix $(SRC_PATH), $(SRC_MATH))
 SRC_LIBFT += $(addprefix $(SRC_PATH), $(SRC_STRING))
 SRC_LIBFT += $(addprefix $(SRC_PATH), $(SRC_MEMORY))
 SRC_LIBFT += $(addprefix $(SRC_PATH), $(SRC_LIST))
 SRC_LIBFT += $(addprefix $(SRC_PATH), $(SRC_WRITE))
 SRC_LIBFT += $(addprefix $(SRC_PATH), $(SRC_READ))
+SRC_LIBFT += $(addprefix $(SRC_PATH), $(SRC_PRINTF))
 
 OBJ_LIBFT := $(addprefix $(OBJ_PATH), $(OBJ_MATH))
 OBJ_LIBFT += $(addprefix $(OBJ_PATH), $(OBJ_STRING))
@@ -111,3 +133,4 @@ OBJ_LIBFT += $(addprefix $(OBJ_PATH), $(OBJ_MEMORY))
 OBJ_LIBFT += $(addprefix $(OBJ_PATH), $(OBJ_LIST))
 OBJ_LIBFT += $(addprefix $(OBJ_PATH), $(OBJ_WRITE))
 OBJ_LIBFT += $(addprefix $(OBJ_PATH), $(OBJ_READ))
+OBJ_LIBFT += $(addprefix $(OBJ_PATH), $(OBJ_PRINTF))
