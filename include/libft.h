@@ -6,7 +6,7 @@
 /*   By: nicolasv <nicolasv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:07:58 by nivergne          #+#    #+#             */
-/*   Updated: 2019/09/21 02:12:58 by nicolasv         ###   ########.fr       */
+/*   Updated: 2019/09/21 02:28:28 by nicolasv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,8 @@ void				*ft_memmove(void *dst, const void *src, size_t len);
 void				*ft_memchr(const void *s, int c, size_t n);
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
+char				**ft_realloctab(char ***tab);
+
 
 char				*ft_strnew(size_t size);
 void				ft_strdel(char **as);
@@ -84,6 +86,7 @@ char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
 
 int					ft_atoi(const char *str);
+long				ft_atol(const char *str);
 char				*ft_itoa(int n);
 
 void				ft_putchar(char c);
