@@ -6,7 +6,7 @@
 #    By: nicolasv <nicolasv@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/20 12:42:57 by nivergne          #+#    #+#              #
-#    Updated: 2019/09/21 02:29:54 by nicolasv         ###   ########.fr        #
+#    Updated: 2019/09/21 02:33:15 by nicolasv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,7 +52,7 @@ clean:
 
 fclean: clean
 	@rm -rf ./obj $(NAME)
-	@echo "$(BOLD)$(CYAN)LIBFT$(BLUE)			arc		$(END)$(RED)[delete]$(END)"
+	@echo "$(BOLD)$(CYAN)LIBFT$(BLUE)			lib		$(END)$(RED)[delete]$(END)"
 	
 re: fclean all
 
