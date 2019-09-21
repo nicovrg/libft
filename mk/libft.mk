@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    libft.mk                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nivergne <nivergne@student.42.fr>          +#+  +:+       +#+         #
+#    By: nicolasv <nicolasv@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/17 04:34:13 by nicolasv          #+#    #+#              #
-#    Updated: 2019/09/19 23:24:14 by nivergne         ###   ########.fr        #
+#    Updated: 2019/09/21 02:09:05 by nicolasv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,6 +50,7 @@ SRC_STRING =				ft_atoi.c\
 							ft_strclr.c\
 							ft_strsub.c\
 							ft_strjoin.c\
+							ft_strnjoinf.c\
 							ft_strtrim.c\
 							ft_strsplit.c\
 							ft_tolower.c\
@@ -66,7 +67,10 @@ SRC_MEMORY =				ft_bzero.c\
 							ft_memchr.c\
 							ft_memcmp.c\
 							ft_memalloc.c\
-							ft_memdel.c
+							ft_memdel.c\
+							ft_swap.c\
+							ft_swap_int.c\
+							ft_realloctab.c
 		
 SRC_MEMORY := $(addprefix memory/, $(SRC_MEMORY))
 OBJ_MEMORY := $(addprefix memory/, $(addsuffix .o, $(basename $(notdir $(SRC_MEMORY)))))
@@ -93,7 +97,8 @@ SRC_WRITE = 				ft_putchar.c\
 SRC_WRITE := $(addprefix write/, $(SRC_WRITE))
 OBJ_WRITE := $(addprefix write/, $(addsuffix .o, $(basename $(notdir $(SRC_WRITE)))))
 
-SRC_READ =					get_next_line.c
+SRC_READ =					get_next_line.c\
+							old_gnl
 
 SRC_READ := $(addprefix read/, $(SRC_READ))
 OBJ_READ := $(addprefix read/, $(addsuffix .o, $(basename $(notdir $(SRC_READ)))))
