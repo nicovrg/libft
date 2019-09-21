@@ -6,13 +6,13 @@
 #    By: nicolasv <nicolasv@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/20 12:42:57 by nivergne          #+#    #+#              #
-#    Updated: 2019/09/21 02:17:23 by nicolasv         ###   ########.fr        #
+#    Updated: 2019/09/21 02:29:54 by nicolasv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-include mk/libft.mk
+include mk/src.mk
 include mk/colors.mk
 
 PATH_INC := include

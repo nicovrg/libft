@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    libft.mk                                           :+:      :+:    :+:    #
+#    src.mk                                             :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: nicolasv <nicolasv@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/17 04:34:13 by nicolasv          #+#    #+#              #
-#    Updated: 2019/09/21 02:09:05 by nicolasv         ###   ########.fr        #
+#    Updated: 2019/09/21 02:30:06 by nicolasv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SRC_MATH := $(addprefix math/, $(SRC_MATH))
 OBJ_MATH := $(addprefix math/, $(addsuffix .o, $(basename $(notdir $(SRC_MATH)))))
 
 SRC_STRING =				ft_atoi.c\
+							ft_atoi.l\
 							ft_itoa.c\
 							ft_isalnum.c\
 							ft_isalpha.c\
